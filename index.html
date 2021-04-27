@@ -7,7 +7,7 @@
     <!--Import Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <!--Import CSS-->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--Import Fontawesome-->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <title>Password Generator</title>
@@ -18,11 +18,69 @@
             <img src="img/logo.png" alt="">
         </div>
         <form action="" class="app" id="app">
+            <div class="fila numro-caracteres">
+                <div class="col">
+                    <label for="numero-caracteres">Numero de caracteres:</label>
+                </div>
+                <div class="col">
+                    <div>
+                        <button class="btn" id="btn-menos-uno"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <input type="text" name="" id="numero-caracteres" readonly value="12">
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-mas-uno"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila simbolos">
+                <div class="col">
+                    <label for="">¿Agregar Simbolos?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-simbolos"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="fila numeros">
+                <div class="col">
+                    <label for="">¿Agregar Numeros?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-numeros"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="fila mayusculas">
+                <div class="col">
+                    <label for="">¿Agregar Mayusculas?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-mayusculas"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+
+            <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar"> <i class="fas fa-lock"></i></button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input-password" name="" id="input-password" readonly value="T3s6sWEs@">
+                </div>
+            </div>
+
+            <!--<div class="fila alert">
+                <div class="col">
+                    <div class="alerta-copiado" id="alerta-copiado">
+                        <p><i class="fas fa-copy"></i>Texto Copiado</p>
+                    </div>
+                </div>
+            </div>-->
 
         </form>
     </div>
-
-
 
     <script src="js/app.js"></script>
 </body>
